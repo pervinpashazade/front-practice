@@ -29,7 +29,7 @@ header .header-wrapper ul li {
     border-radius: 6px;
 }
 
-header .header-wrapper ul li.active {   
+header .header-wrapper ul li.active {
     background-color: #1abc9c;
 }
 
@@ -44,10 +44,69 @@ header .header-wrapper ul li a:hover {
     color: #1abc9c;
 }
 
-.mb-10{
-    margin-bottom: 10;
+section.intro {
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #1abc9c;
 }
 
-.pr-5{
-  padding-right: 5px;  
+section.intro img {
+    width: 141px;
+    height: 150px;
+    margin-bottom: 24px;
+}
+
+section.intro h1 {
+    margin-bottom: 16px;
+}
+
+section.intro ul li {
+    cursor: default;
+    display: inline-block;
+    font-size: 11px;
+}
+
+section.intro ul li:hover {
+    color: red;
+}
+
+section.intro ul li::after {
+    content: '-';
+    margin-left: 5px;
+}
+
+section.intro ul li:last-child::after {
+    content: none;
+}
+
+section.intro .icons {
+    position: relative;
+    margin-bottom: .75rem;
+}
+
+section.intro .icons::before {
+    content: '';
+    width: 112px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+
+section.intro .icons::after {
+    content: '';
+    width: 112px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 30%;
+}
+
+section.intro .icons svg {
+    width: 32px;
+    height: 32px;
 }
